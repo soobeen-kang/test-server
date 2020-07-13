@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <style>
+            
+        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body bgcolor='black' onload="random_image()">
+        <div class="container" style="width:1250px;" aligh="center">
+            <div id="first" class="item">뭐보지?</div>
+            <div id="second" class="item">[NEW]새로 등록된 리뷰</div>
+            <div id="third"class="item">
+                <form id="searchform" method="get">
+                    <input id="search" type="search"></span>
+                    <button id="searchbutton" type="button" onclick="$('#searchform').submit();" 
+                    style="width:20px; background-color:black; border-style:none";>
+                    <img src="영화 이미지/검색창버트.PNG" width=35px; height=35px;>
+                 </button>
+            </div>
+            <div id="fourth"class="item">
+                <div class=thumbnail>
+                <img  src="영화 이미지/온워드.PNG" width=200px; height=280px;>
+                <h4>온워드:단 하루의 기적 </h4>
+            </div>
+            <div class=thumbnail>
+                <img  src="영화 이미지/침입자.PNG"  width=200px; height=280px;>
+                <h4>[영화감상] 침입자</h4>
+            </div>
+            <div class=thumbnail>
+                <img  src="영화 이미지/종이의집.PNG" width=200px; height=280px;>
+                <h4>넷플릭스-종이의 집 후기</h4>
+            </div>
+            <div class=thumbnail>
+                <img  src="영화 이미지/하트시그널3.PNG" width=200px; height=280px;>
+                <h4>[Review]하트시그널 3</h4>
+            </div>
+            </div>
+            <div id="fifth" class="item">
+                <div>
+                <form id="loginform" method="get">
+                    <span>아이디<input id="login" type="text"></span>
+                </div>
+                <div id="password">
+                    <span>비밀번호<input id="password_2" type="password"></span>
+                </div>
+            </div>
+            <div id="six" class="item">
+                    <button id="login_button" type="button" 
+                    style="width:100px; height:100px; background-color:red; border-color:red; border-radius:7px;";>
+                    <h3 style="color:white;">로그인</h3>
+                    </button>
+            </div>
+               <div id="seven" class="item">
+                <div>
+                    <button id="myroom" type="button" onclick="alert1()"
+                    style="width:250px; height:80px; background-color:crimson; border-color:red; border-radius:7px;";>
+                    <h3 style="color:white;">내 리뷰 바로가기</h3>
+                    </button>
+                </div>
+            </div>
+                <div id="eight" class="item">
+
+                    <div>
+                        <a href="https://www.netflix.com/kr/">
+                        <img src="영화 이미지/넷플릭스.PNG" width=80px; height=80px;>
+                    </a>
+                     </div>
+                     <div>
+                        <a href="https://play.watcha.net/">
+                        <img src="영화 이미지/왓챠.PNG" width=80px; height=80px;>
+                    </a>
+                     </div>
+                     <div>
+                        <a href="http://www.tving.com/main.do">
+                        <img src="영화 이미지/티빙.PNG" width=80px; height=75px;>
+                        </a>
+                     </div>
+
+                </div>
+            <div id="nine" class="item">[HOT]이번주 베스트 리뷰</div>
+            <div id="ten" class="item">
+                <div>
+                    <img src="영화 이미지/다크나이트 라이즈.PNG" width=200px; height=280px;>
+                    <h4 class=font1 >다크나이트 라이즈 리뷰 </h4>
+                 </div>
+                 <div>
+                <img src="영화 이미지/블랙미러.PNG" width=200px; height=280px;>
+                <h4 class=font1 >블랙미러 시즌5 후기 </h4>
+                </div>
+                <div>
+                <img src="영화 이미지/비긴어게인3.PNG" width=200px; height=280px;>
+                <h4 class=font1 >비긴어게인 시즌3 </h4>
+                 </div>
+               <div>
+                <img src="영화 이미지/프렌즈.PNG" width=210px; height=280px;>
+                <h4 class=font1 >"코미디 미드" 프렌즈 </h4>
+              </div>
+              <div>
+                <img src="영화 이미지/지금 만나러 갑니다.PNG" width=200px; height=280px;>
+                <h4 class=font1 >지금 만나러 갑니다 리뷰 </h4>
+              </div>
+              <div>
+                <img src="영화 이미지/화살표 우.PNG" width=30px;>
+                <h6>더보기</h6>
+            </div>
+            </div>
+            <div id="eleven" class="item">인기 에디터의 최신 리뷰</div>
+            <div id="twelve" class="item">
+
+                <div>
+                    <img src="영화 이미지/슬기로운 의사생활.PNG" width=200px; height=280px;>
+                    <h4>슬기로운 의사생활 리뷰 </h4>
+                 </div>
+                 <div>
+                <img src="영화 이미지/왕좌의 게임.PNG" width=200px; height=280px;>
+                <h4>왕좌의 게임 시즌8 후기 </h4>
+                </div>
+                <div>
+                <img src="영화 이미지/체르노빌.PNG" width=200px; height=280px;>
+                <h4>[HBO 인기 미드] 체르노빌 </h4>
+                 </div>
+               <div>
+                <img src="영화 이미지/어바웃타임.PNG" width=210px; height=280px;>
+                <h4>[왓챠 영화] 어바웃 타임 </h4>
+              </div>
+              <div>
+                <img src="영화 이미지/나의 아저씨.PNG" width=200px; height=280px;>
+                <h4>"인생드라마" 나의 아저씨 </h4>
+              </div>
+              <div>
+                <img src="영화 이미지/화살표 우.PNG" width=30px;>
+                <h6>더보기</h6>
+             </div>
+             <div id="thirteen" class="item">오늘 한국의 BEST 콘텐츠</div>
+             <div id="fourteen" class="item">
+ 
+                 <div>
+                     <img src="영화 이미지/1.PNG"width=100px; height=150px;>
+
+                  </div>
+                  <div>
+                 <img class="introImg" width=100px; height=150px;>
+
+                 </div>
+                 <div>
+                 <img src="영화 이미지/2.PNG" width=100px; height=150px;>
+
+                  </div>
+                <div>
+                 <img class="introImg" width=100px; height=150px;>
+
+               </div>
+               <div>
+                 <img src="영화 이미지/3.PNG" width=100px; height=150px;>
+                                
+
+               </div>
+               <div>
+                <img class="introImg" width=100px; height=150px;>
+
+              </div>
+              <div>
+                <img src="영화 이미지/4.PNG" width=100px; height=150px;>
+
+              </div>
+              <div>
+                <img class="introImg" width=100px; height=150px;>
+
+              </div>
+              <div>
+                <img src="영화 이미지/5.PNG" width=100px; height=150px;>
+
+              </div>
+              <div>
+              <img class="introImg" width=100px; height=150px;>
+
+              </div>
+
+              
+        </div>
+    </body>
+    <script>
+     function alert1(){
+            alert("로그인을 해주십시오");
+        }
+
+        fetch('http://localhost:3000/users/giveme')
+        .then(res => res.json())
+        .then(data => {
+
+         function random_image()
+            {
+                var myimages=new Array();
+            myimages[0]='랜덤 영화 이미지/365days.PNG';
+            myimages[1]='랜덤 영화 이미지/미녀삼총사 3.PNG';
+            myimages[2]='랜덤 영화 이미지/부부의 세계.PNG';
+            myimages[3]='랜덤 영화 이미지/사이코지만괜찮아.PNG';
+            myimages[4]='랜덤 영화 이미지/슬기로운 의사생활.PNG';
+            myimages[5]='랜덤 영화 이미지/올드가드.PNG';
+            myimages[6]='랜덤 영화 이미지/우리사랑했을까.PNG';
+            myimages[7]='랜덤 영화 이미지/워리어 넌 신의 뜻대로.PNG';
+            myimages[8]='랜덤 영화 이미지/일본침몰.PNG';
+            myimages[9]='랜덤 영화 이미지/하트시그널3.PNG';
+
+
+            var objImg = document.getElementsByClassName("introImg");
+            objImg[0].src = myimages[data.status1];
+            objImg[1].src = myimages[data.status2];
+            objImg[2].src = myimages[data.status3];
+            objImg[3].src = myimages[data.status4];
+            objImg[4].src = myimages[data.status];
+        }
+        
+        random_image();
+    })
+
+        
+
+    </script>
+</html>

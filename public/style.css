@@ -1,0 +1,206 @@
+.item {
+    background-color:white;
+}
+
+.container {
+    margin:50px 150px 50px 150px;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    /*grid-template-rows: 50px 50px 50px 50px;*/
+    /*grid-template-rows: repeat(4,80px);*/
+    /*grid-auto-rows: 80px /*간격만 80px로 맞추고 아래는 자동으로 만들어줘라*/
+    grid-auto-rows: 10px;
+    gap: 5px;
+
+}
+#first{
+    grid-column:1/13;
+    grid-row:1/9;
+    background-color: black;
+    color:red;
+    font-weight:bold;
+    font-size: 80px;
+    text-align:center;
+
+}
+
+#second{
+    padding:0 20px 0 20px;
+    grid-column:1/10;
+    grid-row:9/12;
+    font-size:25px;
+    font-weight:bold;
+    color:white;
+    background-color:black;
+}
+
+#third{
+    grid-column:10/13;
+    grid-row:9/12;
+    vertical-align:middle;
+    background-color: black;
+}
+
+#search{
+    width:220px;
+    vertical-align: middle;
+    border-bottom-color: red;
+    border-bottom-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-right-style:none;
+    background-color: black;
+    color:white;
+
+}
+
+#fourth{
+ 
+    background-color:black;
+    padding:10px 20px 10px 20px;
+    grid-column:1/10;
+    grid-row:12/36;
+}
+#fourth div{
+    margin:0px 5px 0px 5px;
+    display:inline-block;
+    color:white;
+    text-align:center;
+}
+
+#fifth{
+    grid-column:10/12;
+    grid-row:12/22;
+    text-align: center;
+    vertical-align: center;
+    align-content: center;
+    padding:30px 0 0 0;
+    background-color:black;
+    color:white
+}
+
+#password{
+    margin:10px 0 0 0;
+}
+
+#six{
+    padding:30px 0 0 0;
+    background-color: black;
+    grid-column:12/13;
+    grid-row:12/22;
+}
+
+#seven{
+    grid-column:10/13;
+    grid-row:22/29;
+    background-color: black;
+    align-content: center;
+    vertical-align: middle;
+    padding:10px 0 0 30px;
+}
+    
+    
+#eight{
+    grid-column:10/13;
+    grid-row:29/36;
+    background-color: black;
+    text-align: center;
+    align-content: center;
+    padding:0 0 0 10px;
+}
+
+#eight div{
+    display:inline-block;
+
+}
+
+
+#nine{
+    padding:0 20px 0 20px;
+    grid-column:1/13;
+    grid-row:36/39;
+    font-size:25px;
+    font-weight:bold;
+    color:white;
+    background-color:black;
+}
+
+#ten{
+    
+    grid-column:1/13;
+    grid-row:39/63;
+    background-color:black;
+    padding:10px 20px 10px 20px;
+}
+
+#ten div{
+    margin:0px 10px 0px 5px;
+    display:inline-block;
+    color:white;
+    text-align:center;
+    vertical-align: middle;
+}
+
+#eleven{
+    padding:0 20px 0 20px;
+    grid-column:1/13;
+    grid-row:63/66;
+    font-size:25px;
+    font-weight:bold;
+    color:white;
+    background-color:black;
+}
+
+#twelve{
+    grid-column:1/13;
+    grid-row:66/90;
+    background-color:black;
+    padding:10px 20px 10px 20px;
+}
+
+#twelve div{
+    margin:0px 10px 0px 5px;
+    display:inline-block;
+    color:white;
+    text-align:center;
+    vertical-align: middle;
+}
+
+#thirteen{
+    padding:0 20px 0 20px;
+    grid-column:1/13;
+    grid-row:66/69;
+    font-size:25px;
+    font-weight:bold;
+    color:white;
+    background-color:black;
+}
+
+#fourteen{
+    grid-column:1/13;
+    grid-row:69/90;
+    background-color:black;
+    padding:10px 20px 10px 20px;
+}
+
+#fourteen div{
+    margin:0px 0px 0px 0px;
+    display:inline-block;
+    color:white;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.thumbnail:hover {
+    position:relative;
+    top:-5px;
+    left:-5px;
+    width:200px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+.font1:hover {
+ color:grey;
+}
