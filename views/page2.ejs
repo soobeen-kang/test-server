@@ -226,15 +226,11 @@
         document.getElementById("noti").style.display = "none";
       }
 
-      funcion move() {
+      function move(){
         location.href = "http://localhost:3000/review"
       }
 
-      fetch('http://localhost:3000/users/giveme')
-        .then(res => res.json())
-        .then(data => {
-          alert(data.status);
-        })
+     
 
 
     </script>

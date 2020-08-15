@@ -47,8 +47,37 @@
 
 #five{
     grid-column:1/13;
-    grid-row:12/15;
+    grid-row:12/13;
     background-color: black;
     color:white;
+    font-weight:bold;
+    font-size: 30px;
+}
+
+#six{
+    grid-column:1/3;
+    grid-row:13/14;
+    background-color: black;
+    color:white;
+    
+    font-size: 20px;
+
+}
+
+#seven{
+    grid-column:3/5;
+    grid-row:13/14;
+    background-color: black;
+    color:white;
+    font-size: 20px;
+
+}
+
+#eight{
+    grid-column:5/13;
+    grid-row:13/14;
+    background-color: black;
+    color:white;
+    font-size: 20px;
 
 }

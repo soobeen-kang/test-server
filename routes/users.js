@@ -156,7 +156,22 @@ router.get('/bestreview', async (req, res, next) => {
       }
       });
     
-
+      router.get('/moviereview', async (req, res, next) => {
+  
+        try{
+        const connection = await pool.getConnection();
+        const [results] = await connection.query('SELECT * FROM MYREVIEW_TB');
+        let title= results[0].TITLE;
+        let review= results[0].REVIEW;
+        let score= results[0].SCORE;
+      
+        res.json({status:200, arr:title, arr1:review, arr2:score });
+        }
+      
+        catch(err){
+          res.json({status:500, msg:"에러가 났어요!"});
+        }
+        });
 
 
    

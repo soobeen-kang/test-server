@@ -12,19 +12,45 @@
                 <iframe width="622" height="310" src="https://www.youtube.com/embed/RAc0nhwgGY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div id="four" class="item">
-                <h1>부산행</h1><h4>train to busan(2016)</h4>
-                평점:
-                장르:액션, 스릴러
-                개봉일: 2016.07.20 
-                상영시간: 118분
-                감독: 연상호
-                배우: 공유, 정유미, 마동석
-                줄거리:
+                <h1>부산행</h1>
+                train to busan(2016)
+                <br>평점:8.59
+                <br>장르:액션, 스릴러
+                <br>개봉일: 2016.07.20 
+                <br>상영시간: 118분
+                <br>감독: 연상호
+                <br>배우: 공유, 정유미, 마동석
+                <br>줄거리:전대미문의 재난이 대한민국을 덮친다!
+                 열차에 몸을 실은 사람들은 단 하나의 안전한 도시 부산까지
+                 살아가기 위한 치열한 사투를 벌이게 된다.
+                
             </div>
-            <div id="five" class="item">리뷰</div>
+            <div id="five" class="item">REVIEWS</div>
+            <div id="six" class="item"></div>
+            <div id="seven" class="item"></div>
+            <div id="eight" class="item"></div>
             
 
 
             </div>
 </body>
+
+<script>
+    
+    fetch('http://localhost:3000/users/moviereview')
+        .then(res => res.json())
+        .then(data => {
+
+            let title= data.arr;
+            let review= data.arr1;
+            let score= data.arr2;
+
+            document.getElementById('six').innerHTML=title;
+            document.getElementById('seven').innerHTML=score;
+            document.getElementById('eight').innerHTML=review;
+
+        
+    })
+
+</script>
 </html>
