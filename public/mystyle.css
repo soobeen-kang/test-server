@@ -69,8 +69,8 @@
 }
 
 #fifth{
-    grid-column:10/12;
-    grid-row:12/22;
+    grid-column:10/13;
+    grid-row:12/29;
     text-align: center;
     vertical-align: center;
     align-content: center;
@@ -83,23 +83,7 @@
     margin:10px 0 0 0;
 }
 
-#six{
-    padding:30px 0 0 0;
-    background-color: black;
-    align-content: center;
-    grid-column:12/13;
-    grid-row:12/22;
-}
 
-#seven{
-    grid-column:10/13;
-    grid-row:22/29;
-    background-color: black;
-    align-content: center;
-    vertical-align: middle;
-    padding:10px 0 0 30px;
-}
-    
     
 #eight{
     grid-column:10/13;

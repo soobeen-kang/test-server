@@ -1,9 +1,7 @@
 <html>
     <head>
-        <style>
-            
-        </style>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
     </head>
     <body bgcolor='black' onload="random_image()">
         <div class="container" style="width:1250px;" aligh="center">
@@ -36,34 +34,9 @@
             </div>
             </div>
             <div id="fifth" class="item">
-                <div>
-                <form action="http://localhost:3000/users/login" method="post">
-                    <h6>아이디<input id="login" name="user_id" type="text" ></h6>
-                    <h6>비 번<input id="password_2" name="pwd" type="password" ></h6>
-                    <input type="submit">
-                    </form>
-                </div>
-            </div>
-            <div id="six" class="item">
-                    <button id="login_button" type="submit" 
-                    style="width:100px; height:50px; background-color:red; border-color:black; border-radius:7px;";>
-                    <h3 style="color:white; ">로그인</h3>
-                    </button>
-                
-                    <a href="http://localhost:3000/signup"> 
-                    <button id="login_button" type="button" 
-                    style="width:100px; height:50px; background-color:red; border-color:black; border-radius:7px;";>
-                    <h3 style="color:white;">회원가입</h3>
-                    </button>
-                    </a>
-            </div>
-               <div id="seven" class="item">
-                <div>
-                    <button id="myroom" type="button" onclick="alert1()"
-                    style="width:250px; height:80px; background-color:crimson; border-color:red; border-radius:7px;";>
-                    <h3 style="color:white;">내 리뷰 바로가기</h3>
-                    </button>
-                </div>
+              <iframe width="290" height="200" src= http://localhost:3000/myhtml> </iframe>
+
+
             </div>
                 <div id="eight" class="item">
 
@@ -221,16 +194,6 @@
         random_image();
     })
 
-    fetch('http://localhost:3000/users/bestreview')
-        .then(res => res.json())
-        .then(data => {
-
-         function alert2()
-            {
-                alert("이번주 베스트 에디터는 "+data.arr4+" 입니다. 짝짝짝!!");
-            }
-        alert2();
-    })
 
 
 

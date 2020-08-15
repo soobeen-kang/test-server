@@ -1,0 +1,70 @@
+.container {
+    margin:50px 150px 50px 150px;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    /*grid-template-rows: 50px 50px 50px 50px;*/
+    /*grid-template-rows: repeat(4,80px);*/
+    /*grid-auto-rows: 80px /*간격만 80px로 맞추고 아래는 자동으로 만들어줘라*/
+    grid-auto-rows: 10px;
+    gap: 5px;
+
+}
+
+#one{
+    grid-column:1/13;
+    grid-row:1/9;
+    background-color: black;
+    color:red;
+    font-weight:bold;
+    font-size: 80px;
+    text-align:center;
+
+}
+
+#two{
+    padding:0 20px 0 20px;
+    grid-column:1/13;
+    grid-row:10/14;
+    font-size:25px;
+    font-weight:bold;
+    color:white;
+    text-align:center;
+    background-color:black;
+    text-align:center;
+}
+#three{
+    padding:0 20px 0 20px;
+    grid-column:1/13;
+    grid-row:14/35;
+    font-size:17px;
+    font-weight:bold;
+    color:white;
+    text-align:center;
+    background-color:black;
+    text-align:center;
+}
+
+#eight{
+    padding:0 20px 0 20px;
+    grid-column:1/13;
+    grid-row:38/42;
+    font-size:15px;
+    font-weight:lighter;
+    color:white;
+    background-color:black;
+    text-align:center;
+}
+
+
+.sign{
+    width:220px;
+    vertical-align: middle;
+    border-bottom-color: red;
+    border-bottom-style: solid;
+    border-top-style:none;
+    border-left-style:none;
+    border-right-style:none;
+    background-color: black;
+    color:white;
+
+}
